@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6">
+<file name="/home/anon/git/monolith/src/test/java/de/mstock/monolith/service/ShopServiceTest.java">
+</file>
+<file name="/home/anon/git/monolith/src/test/java/de/mstock/monolith/web/HomepageControllerTest.java">
+</file>
+</checkstyle>

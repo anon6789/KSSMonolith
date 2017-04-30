@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1489745987034" analysisTimestamp="1489745987065" release="">
+  <Project projectName="">
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/config/I18nConfig.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/config/HibernateConfig.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/config/SecurityConfig.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/HomepageController.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/ProductController.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/i18n/AcceptHeaderLookupLocaleResolver.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/ProductDTO.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/CategoryController.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/web/CategoryDTO.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/service/ShopService.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/service/NotFoundException.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/MonolithApplication.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/Category.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/CategoryRepository.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/ProductWeightUnit.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/ProductRepository.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/ProductI18nPk.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/Product.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/ProductI18n.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/CategoryI18nPk.class</Jar>
+    <Jar>/home/anon/git/monolith/build/classes/main/de/mstock/monolith/domain/CategoryI18n.class</Jar>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-cache/1.5.1.RELEASE/6976dacb42d3654d990a8a26c61599e85c2bdd02/spring-boot-starter-cache-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/1.5.1.RELEASE/c65567d9300f4b2a5e0ad9ecc3a7696e7d640771/spring-boot-starter-data-jpa-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.flywaydb/flyway-core/3.2.1/88347e9a484152e9b80fbad7648d1b552a8cff78/flyway-core-3.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.5.1.RELEASE/a7305b81937d3391108a097d1236f9d540009780/spring-boot-starter-security-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/1.5.1.RELEASE/73ac6e73f4ec4083ba7adccf58e2319a1bbfffe/spring-boot-starter-thymeleaf-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.1.RELEASE/8404c45cb53a05edcd0ad8fc57a5fe43462263d8/spring-boot-starter-web-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.1.RELEASE/5fb187e6a363b9145e3f7f18130ba64e9e22dad8/spring-boot-starter-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.6.RELEASE/5f3041020113e3202a7ae9defe36e7b5d2fb87eb/spring-context-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.6.RELEASE/b0ddc88215dd16e3922c1d937a05627e3710b04c/spring-context-support-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.5.1.RELEASE/c03e2abaa0dc45a64f2a71dd0e6db940ef326dd5/spring-boot-starter-aop-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.5.1.RELEASE/92022d685035a0b043ce581870fceac7156f427d/spring-boot-starter-jdbc-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.11.Final/c2487fb72a2217a7cec9ab478d4c21a36fc09977/hibernate-core-5.0.11.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.0.11.Final/549565caed4e0bcb816843693e66ff7b04ce025f/hibernate-entitymanager-5.0.11.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.0.RELEASE/a4c55e3492e511fb1fa956fdefc4aff7904bb799/spring-data-jpa-1.11.0.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.3.6.RELEASE/f89e7d952f8981ee616ac5e680d020ae7c52c068/spring-aspects-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.6.RELEASE/d70b2393d380cd468d9a14969efaf9022c67c0/spring-aop-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.1.RELEASE/fe8b195415728d8c380531531ce0da5b40bd547f/spring-security-config-4.2.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.1.RELEASE/31a526327f419664fe27455d5b2538a1b4aa5dee/spring-security-web-4.2.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring4/2.1.5.RELEASE/74cb9028e99597b5d71a98e919fd531a7fc290b4/thymeleaf-spring4-2.1.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect/1.4.0/8d7810c069ed1534b9631fb1e85c35973546086/thymeleaf-layout-dialect-1.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.5.1.RELEASE/edf030756ec627ad4d9beb6710c3b0da77412782/spring-boot-starter-tomcat-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.4.Final/2f6c8c0b646afe18e3ad205726729d3c4a85fe2e/hibernate-validator-5.3.4.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.6/c43de61f74ecc61322ef8f402837ba65b0aa2bf4/jackson-databind-2.8.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/8b8bf8fc6ed4acd5ae0baa6179f1cccc52aaa9aa/spring-web-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.6.RELEASE/ea55690d6d61ad70e2569db1e1add1603e427862/spring-webmvc-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.1.RELEASE/670ebd283098aa2d8a397af84fbe6ea152a4d8fa/spring-boot-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.1.RELEASE/251d960da2d5adfd55cf0281fcdfa69ab525a36d/spring-boot-autoconfigure-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.1.RELEASE/889d35cc87daa453a823056798a4039cd321952a/spring-boot-starter-logging-1.5.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.6.RELEASE/690da099c3c2d2536210f0fd06ff3f336de43ad9/spring-core-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.6.RELEASE/1585715ed598b76a23dac931c27aa039b189eafb/spring-beans-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.6.RELEASE/13b53568cfd7b308e70efcbac6cdd0c5d597ba1/spring-expression-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.11/4d156969f12963b5f9232e9fe68ab710c3318ad5/tomcat-jdbc-8.5.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.6.RELEASE/6b7855cfbc636dff3d902f4f335fc69e7309d55c/spring-jdbc-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.21.0-GA/598244f595db5c5fb713731eddbb1c91a58d959b/javassist-3.21.0-GA.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.13.0.RELEASE/4472200cf3fca46e12612e548c4a52a531edf10b/spring-data-commons-1.13.0.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.6.RELEASE/16792e74cc27a032f2ac974972ec0d4ccb9bf18e/spring-orm-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.6.RELEASE/41b8d5a15a8fcdfef9b2422ea2d97df326b6074b/spring-tx-4.3.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.22/a1c83373863cec7ae8d89dc1c5722d8cb6ec0309/slf4j-api-1.7.22.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.22/86ceac14535af5a42c8fb0d06d79b925dd3cb263/jcl-over-slf4j-1.7.22.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.1.RELEASE/4e8ae0eb3218e1cacc3d7bd2eb41929799340618/spring-security-core-4.2.1.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/2.1.5.RELEASE/513bffa3daaac277460c1a0a2dccb228fa40569e/thymeleaf-2.1.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.7/10870e6511f544ce45152d0ad08d7514a00c8201/groovy-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.11/72761f51fc7cef3ee19d4aafc7adc605df9f611f/tomcat-embed-core-8.5.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.11/60253815b897166903bf5ec41219c5bb15333a69/tomcat-embed-el-8.5.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.11/dfa65e7857d46630761c0571758a56f7cbd1e9ba/tomcat-embed-websocket-8.5.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.3/864c8e370a691e343210cc7c532fc198cee460d8/classmate-1.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.6/2ef7b1cc34de149600f5e75bc2d5bf40de894e60/jackson-core-2.8.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.9/978cd9fbb43b7abed6379d7b02de052d216e30fc/logback-classic-1.1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.22/b0429e950b3d2bc2c39c1bacafac753edbe3781c/jul-to-slf4j-1.7.22.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.22/a527c37e9ca6c3d19ba298edd4aa344ca751a203/log4j-over-slf4j-1.7.22.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.11/fa0b261ce002175b65ebb6ae8eb4345cb7e57da3/tomcat-juli-8.5.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/ognl/ognl/3.0.8/37e1aebfde7eb7baebc9ad4f85116ef9009c5fc5/ognl-3.0.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.1.0.RELEASE/ab0db4fe0a6fa89fb8da2a40008a4e63a7f3f5b9/unbescape-1.1.0.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/root/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.9/e05d0cb67220937c32d7b4e5a47f967605376f63/logback-core-1.1.9.jar</AuxClasspathEntry>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/I18nConfig.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/HibernateConfig.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/SecurityConfig.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/ProductController.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/ProductDTO.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/CategoryController.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/i18n/AcceptHeaderLookupLocaleResolver.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/CategoryDTO.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/HomepageController.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/service/ShopService.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/service/NotFoundException.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/MonolithApplication.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryRepository.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductWeightUnit.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryI18n.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/Category.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/Product.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductI18n.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductI18nPk.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductRepository.java</SrcDir>
+    <SrcDir>/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryI18nPk.java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 17 Mar 2017 11:19:47 +0100" total_classes="21" referenced_classes="149" total_bugs="0" total_size="343" num_packages="6" java_version="1.8.0_111" vm_version="25.111-b14" cpu_seconds="10.85" clock_seconds="3.23" peak_mbytes="177.90" alloc_mbytes="1708.50" gc_seconds="0.05">
+    <PackageStats package="de.mstock.monolith" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="de.mstock.monolith.MonolithApplication" sourceFile="MonolithApplication.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="de.mstock.monolith.config" total_bugs="0" total_types="3" total_size="28">
+      <ClassStats class="de.mstock.monolith.config.HibernateConfig" sourceFile="HibernateConfig.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.config.I18nConfig" sourceFile="I18nConfig.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.config.SecurityConfig" sourceFile="SecurityConfig.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="de.mstock.monolith.domain" total_bugs="0" total_types="9" total_size="178">
+      <ClassStats class="de.mstock.monolith.domain.Category" sourceFile="Category.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.CategoryI18n" sourceFile="CategoryI18n.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.CategoryI18nPk" sourceFile="CategoryI18nPk.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.CategoryRepository" sourceFile="CategoryRepository.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.Product" sourceFile="Product.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.ProductI18n" sourceFile="ProductI18n.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.ProductI18nPk" sourceFile="ProductI18nPk.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.ProductRepository" sourceFile="ProductRepository.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.domain.ProductWeightUnit" sourceFile="ProductWeightUnit.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="de.mstock.monolith.service" total_bugs="0" total_types="2" total_size="41">
+      <ClassStats class="de.mstock.monolith.service.NotFoundException" sourceFile="NotFoundException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.service.ShopService" sourceFile="ShopService.java" interface="false" size="37" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="de.mstock.monolith.web" total_bugs="0" total_types="5" total_size="67">
+      <ClassStats class="de.mstock.monolith.web.CategoryController" sourceFile="CategoryController.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.web.CategoryDTO" sourceFile="CategoryDTO.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.web.HomepageController" sourceFile="HomepageController.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.web.ProductController" sourceFile="ProductController.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="de.mstock.monolith.web.ProductDTO" sourceFile="ProductDTO.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="de.mstock.monolith.web.i18n" total_bugs="0" total_types="1" total_size="23">
+      <ClassStats class="de.mstock.monolith.web.i18n.AcceptHeaderLookupLocaleResolver" sourceFile="AcceptHeaderLookupLocaleResolver.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="431" invocations="993" avgMicrosecondsPerInvocation="434" maxMicrosecondsPerInvocation="26167" standardDeviationMircosecondsPerInvocation="1276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="247" invocations="149" avgMicrosecondsPerInvocation="1664" maxMicrosecondsPerInvocation="27330" standardDeviationMircosecondsPerInvocation="3750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="194" invocations="149" avgMicrosecondsPerInvocation="1304" maxMicrosecondsPerInvocation="19590" standardDeviationMircosecondsPerInvocation="2872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="177" invocations="349" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="5853" standardDeviationMircosecondsPerInvocation="725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="112" invocations="1006" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1650" standardDeviationMircosecondsPerInvocation="79"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="222" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="23062" standardDeviationMircosecondsPerInvocation="1893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="149" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="8238" standardDeviationMircosecondsPerInvocation="1352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="72" invocations="149" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="16924" standardDeviationMircosecondsPerInvocation="1585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="69" invocations="949" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="1751" standardDeviationMircosecondsPerInvocation="140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="59" invocations="88" avgMicrosecondsPerInvocation="677" maxMicrosecondsPerInvocation="46079" standardDeviationMircosecondsPerInvocation="4870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="53" invocations="149" avgMicrosecondsPerInvocation="360" maxMicrosecondsPerInvocation="7085" standardDeviationMircosecondsPerInvocation="939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="53" invocations="85" avgMicrosecondsPerInvocation="626" maxMicrosecondsPerInvocation="8768" standardDeviationMircosecondsPerInvocation="1339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="51" invocations="149" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="4760" standardDeviationMircosecondsPerInvocation="677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="50" invocations="149" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="5269" standardDeviationMircosecondsPerInvocation="788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="50" invocations="85" avgMicrosecondsPerInvocation="588" maxMicrosecondsPerInvocation="13646" standardDeviationMircosecondsPerInvocation="1645"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="48" invocations="85" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="13886" standardDeviationMircosecondsPerInvocation="1660"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="45" invocations="85" avgMicrosecondsPerInvocation="529" maxMicrosecondsPerInvocation="4134" standardDeviationMircosecondsPerInvocation="873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="42" invocations="85" avgMicrosecondsPerInvocation="496" maxMicrosecondsPerInvocation="15016" standardDeviationMircosecondsPerInvocation="1630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="41" invocations="85" avgMicrosecondsPerInvocation="490" maxMicrosecondsPerInvocation="5096" standardDeviationMircosecondsPerInvocation="931"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

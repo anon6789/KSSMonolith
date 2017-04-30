@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.mstock.monolith.service.ShopServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-03-17T10:50:00" hostname="anon-pc" time="0.479">
+  <properties/>
+  <testcase name="shouldGetDataTransferObjectForEveryEntity" classname="de.mstock.monolith.service.ShopServiceTest" time="0.205"/>
+  <testcase name="shouldFormatPrice" classname="de.mstock.monolith.service.ShopServiceTest" time="0.272"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

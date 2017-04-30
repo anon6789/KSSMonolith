@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6">
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/MonolithApplication.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/HibernateConfig.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/I18nConfig.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/config/SecurityConfig.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/Category.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryI18n.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryI18nPk.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/CategoryRepository.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/Product.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductI18n.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductI18nPk.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductRepository.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/domain/ProductWeightUnit.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/service/NotFoundException.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/service/ShopService.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/CategoryController.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/CategoryDTO.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/HomepageController.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/ProductController.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/ProductDTO.java">
+</file>
+<file name="/home/anon/git/monolith/src/main/java/de/mstock/monolith/web/i18n/AcceptHeaderLookupLocaleResolver.java">
+</file>
+</checkstyle>
