@@ -40,6 +40,9 @@
                 th:href="@{/categories/__${category.prettyUrlFragment}__.html}"
                 th:text="${category.name}">Category</a></li>
             </ul>
+           	<ul class="nav navbar-nav navbar-right">
+           		<li><a href="/basket" id="basket">Basket</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -47,9 +50,6 @@
   </div>
   <div class="container marketing">
     <footer th:fragment="footer">
-      <p class="pull-right">
-        <a href="#" th:text="#{general.backToTop}">Back to top</a>
-      </p>
       <p th:inline="text">
         &copy; 2017 [[#{company}]] &middot; <a href="/legal-notice.html"
           th:text="#{navigation.legalNotice}">Legal Notice</a>
