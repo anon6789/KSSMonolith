@@ -1,3 +1,12 @@
 .text-emphasized {
   font-style: italic;
 }
+#basket {
+	background-image: url("/images/basket.png");
+	display:block;
+    height:50px;
+    width: 75px;
+    text-indent:-9999px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
