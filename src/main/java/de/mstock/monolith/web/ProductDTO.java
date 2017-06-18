@@ -10,6 +10,7 @@ public class ProductDTO {
   private final String prettyUrlFragment;
   private final String price;
   private final String description;
+  private String count;
 
   /**
    * A simplified representation of a product.
@@ -19,6 +20,7 @@ public class ProductDTO {
    * @param name The localized name.
    * @param price The product's price per unit.
    * @param description The description of the product.
+   * @param units amount of items ordered.
    */
   public ProductDTO(String itemNumber, ProductWeightUnit unit, String name,
       String prettyUrlFragment, String price, String description) {
@@ -28,14 +30,11 @@ public class ProductDTO {
     this.prettyUrlFragment = prettyUrlFragment;
     this.price = price;
     this.description = description;
+    this.count = "1";
   }
 
   public String getItemNumber() {
     return itemNumber;
-  }
-
-  public ProductWeightUnit getUnit() {
-    return unit;
   }
 
   public String getName() {
@@ -52,6 +51,14 @@ public class ProductDTO {
 
   public String getPrettyUrlFragment() {
     return prettyUrlFragment;
+  }
+
+  public String getCount() {
+	return count;
+  }
+  
+  public void setCount(String count){
+	  this.count = count;
   }
 
 }

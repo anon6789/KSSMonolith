@@ -18,20 +18,20 @@
 
     <div class="row">
       <div class="col-md-8">
-      	<a>Artikel Name</a>
+      	<a>Article Name</a>
       </div>
       <div class="col-md-2">
-      	<a>Anzahl</a>
+      	<a>Count</a>
       </div>
       <div class="col-md-2">
-      	<a>Preis</a>
+      	<a>Price</a>
       </div>
     </div>
     
     <div class="row">
       <div th:each="product, row : ${basket}">
 		<div class="col-md-8"><a th:text="${product.name}">Product</a></div>
-      	<div class="col-md-2"><a>1</a></div>
+      	<div class="col-md-2"><a th:text="${product.count}"></a></div>
       	<div class="col-md-2"><p th:text="${product.price}">1,47 Euro</p></div>
       </div>
     </div>

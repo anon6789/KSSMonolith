@@ -1,7 +1,6 @@
 package de.mstock.monolith.domain;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -11,22 +10,34 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "productList" })
-public class Basket {
+@JsonPropertyOrder({ "productId", "count" })
+public class ProductList {
 
-	@JsonProperty("productList")
-	private List<ProductList> productList = null;
+	@JsonProperty("productId")
+	private String productId;
+	@JsonProperty("count")
+	private Integer count;
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-	@JsonProperty("productList")
-	public List<ProductList> getProductList() {
-		return productList;
+	@JsonProperty("productId")
+	public String getProductId() {
+		return productId;
 	}
 
-	@JsonProperty("productList")
-	public void setProductList(List<ProductList> productList) {
-		this.productList = productList;
+	@JsonProperty("productId")
+	public void setProductId(String productId) {
+		this.productId = productId;
+	}
+
+	@JsonProperty("count")
+	public Integer getCount() {
+		return count;
+	}
+
+	@JsonProperty("count")
+	public void setCount(Integer count) {
+		this.count = count;
 	}
 
 	@JsonAnyGetter
@@ -37,11 +48,6 @@ public class Basket {
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
 		this.additionalProperties.put(name, value);
-	}
-	
-	@Override
-    public String toString() {
-		return "Basket contains " + productList.size() + " items." ;
 	}
 
 }

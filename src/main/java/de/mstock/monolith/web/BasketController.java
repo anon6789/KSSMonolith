@@ -10,9 +10,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.client.RestTemplate;
 
 import de.mstock.monolith.domain.Basket;
 import de.mstock.monolith.domain.Product;
+import de.mstock.monolith.domain.ProductList;
 import de.mstock.monolith.service.ShopService;
 
 @Controller
@@ -35,11 +37,32 @@ public class BasketController {
   public String category(Model model, Locale locale) {
 	  
 	List<ProductDTO> testBasket = shopService.getProductsForCategory(locale, "vegetables");
+	
+	Basket basket = consumeRESTService();
 	  
     //model.addAttribute("categories", shopService.getCategories(locale));
     //model.addAttribute("products", shopService.getProductsForCategory(locale, prettyUrlFragment));
     //model.addAttribute("prettyUrlFragment", prettyUrlFragment);
-	model.addAttribute("basket", testBasket);
+	//model.addAttribute("basket", testBasket);
+	model.addAttribute("basket", basketToDTO(basket, locale));
     return TEMPLATE;
+  }
+  
+  private Basket consumeRESTService(){
+	  RestTemplate restTemplate = new RestTemplate();
+      Basket basket = restTemplate.getForObject("http://localhost:8080/order/?user=martin", Basket.class);
+      return basket;
+  }
+  
+  private List<ProductDTO> basketToDTO(Basket basket, Locale locale){
+	  ArrayList<ProductDTO> products = new ArrayList<ProductDTO>();
+	  
+	  for (ProductList product : basket.getProductList()){
+		  ProductDTO proDTO = shopService.getProduct(locale, product.getProductId());
+		  proDTO.setCount(product.getCount().toString());
+		  products.add(proDTO);
+	  }
+	  
+	  return products;
   }
 }
