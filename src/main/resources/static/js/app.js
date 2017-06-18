@@ -23,6 +23,8 @@ function addToChart() {
 }
 
 function deleteFromBasket(itemName) {
+	
+	itemName = itemName.toLowerCase()
 		
 	console.log("try to delete " + itemName + " from basket.");
 	
@@ -32,11 +34,12 @@ function deleteFromBasket(itemName) {
         	    data: '{ "count": '+ 1 + ', "productId": "' + itemName + '" }',
         	    contentType:"application/json; charset=utf-8",
         	    dataType:"json",
-        	    success: function(data) { 
-        	    	console.log(data);
+        	    success: function() { 
+        	    	  location.reload(true); //TODO: ugly hack, implement nice reload
         	    },
-        	    error: function(data) {
+        	    error: function() {
         	    	console.log("error");
+      	    	  	location.reload(true); //TODO: ugly hack, implement nice reload
         	    }
         	});
 }
