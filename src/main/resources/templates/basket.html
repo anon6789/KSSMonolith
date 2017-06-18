@@ -17,7 +17,7 @@
   <div class="container category">
 
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-7">
       	<a>Article Name</a>
       </div>
       <div class="col-md-2">
@@ -26,13 +26,15 @@
       <div class="col-md-2">
       	<a>Price</a>
       </div>
+      <div class="col-md-1"></div>
     </div>
     
     <div class="row">
       <div th:each="product, row : ${basket}">
-		<div class="col-md-8"><a th:text="${product.name}">Product</a></div>
+		<div class="col-md-7"><a th:text="${product.name}">Product</a></div>
       	<div class="col-md-2"><a th:text="${product.count}"></a></div>
       	<div class="col-md-2"><p th:text="${product.price}">1,47 Euro</p></div>
+      	<div class="col-md-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\');'" class="deleteButton">X</button></div>
       </div>
     </div>
     
@@ -48,5 +50,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../static/js/bootstrap.min.js"
     th:src="@{/js/bootstrap.min.js}"></script>
+  <script src="../static/js/app.js"
+    th:src="@{/js/app.js}"></script>
 </body>
 </html>
