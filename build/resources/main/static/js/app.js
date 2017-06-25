@@ -8,9 +8,9 @@ function addToChart() {
 	console.log("try to add " + itemName + " to basket.");
 	
     $.ajax({
-        	    url: 'http://localhost:8080/product/?user=' + 'martin',
+        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
         	    type: 'PUT',
-        	    data: '{ "count": '+ count + ', "productId": "' + itemName + '" }',
+        	    data: '{ "count": '+ count + ', "productDto": { "productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
         	    dataType:"json",
         	    success: function(data) { 

@@ -11,21 +11,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "productList" })
+@JsonPropertyOrder({ "basketEntryDtoList" })
 public class Basket {
 
-	@JsonProperty("productList")
-	private List<ProductList> productList = null;
+	@JsonProperty("basketEntryDtoList")
+	private List<BasketEntryDto> productList = null;
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-	@JsonProperty("productList")
-	public List<ProductList> getProductList() {
+	@JsonProperty("basketEntryDtoList")
+	public List<BasketEntryDto> getProductList() {
 		return productList;
 	}
 
-	@JsonProperty("productList")
-	public void setProductList(List<ProductList> productList) {
+	@JsonProperty("basketEntryDtoList")
+	public void setProductList(List<BasketEntryDto> productList) {
 		this.productList = productList;
 	}
 

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 
 import de.mstock.monolith.domain.Basket;
+import de.mstock.monolith.domain.BasketEntryDto;
 import de.mstock.monolith.domain.Product;
 import de.mstock.monolith.domain.ProductList;
 import de.mstock.monolith.service.ShopService;
@@ -57,8 +58,8 @@ public class BasketController {
   private List<ProductDTO> basketToDTO(Basket basket, Locale locale){
 	  ArrayList<ProductDTO> products = new ArrayList<ProductDTO>();
 	  
-	  for (ProductList product : basket.getProductList()){
-		  ProductDTO proDTO = shopService.getProduct(locale, product.getProductId());
+	  for (BasketEntryDto product : basket.getProductList()){
+		  ProductDTO proDTO = shopService.getProduct(locale, product.getProductDto().getProductId());
 		  proDTO.setCount(product.getCount().toString());
 		  products.add(proDTO);
 	  }
