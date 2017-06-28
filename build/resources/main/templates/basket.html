@@ -16,7 +16,7 @@
 
   <div class="container category">
 
-    <div class="row">
+    <div class="row" id="basketHeadline">
       <div class="col-md-4 col-sm-4">
       	<a>Article Name</a>
       </div>
@@ -34,16 +34,26 @@
       <div class="col-md-1 col-sm-1"></div>
     </div>
     
-    <div class="row">
+    <div class="row" id="basketEntrys">
       <div th:each="product, row : ${basket}">
-		<div class="col-md-4 col-sm-1"><a th:text="${product.name}">Product</a></div>
+		<div class="col-md-4 col-sm-4"><a th:text="${product.name}">Product</a></div>
       	<div class="col-md-1 col-sm-1"><a th:text="${product.count}"></a></div>
       	<div class="col-md-2 col-sm-2"><p th:text="${product.price}+'$'"></p></div>
       	<div class="col-md-2 col-sm-2"><p th:text="${product.price}*${product.count}+'$'"></p></div>
-      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton">-</button></div>
-      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:increaseBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton">+</button></div>
-      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 10);'" class="deleteButton">X</button></div>
+      	<div class="col-md-3 col-sm-3">
+      		<div class="btn-group">
+      			<button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton btn">-</button>
+      			<button  th:onclick="'javascript:increaseBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton btn">+</button>
+      			<button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 10);'" class="deleteButton btn">x</button>
+      		</div>
+      	</div>
       </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-md-6 col-sm-6"></div>
+    	<div class="col-md-1 col-sm-1">Total:</div>
+    	<div class="col-md-1 col-sm-1"><p>TODO</p></div>
     </div>
     
 

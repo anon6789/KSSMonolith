@@ -15,6 +15,8 @@ function addToChart() {
         	    dataType:"json",
         	    success: function(data) { 
         	    	console.log(data);
+        	    	$("#addIcon").fadeIn();
+        	    	$(".addIcon").fadeOut("slow");
         	    },
         	    error: function(data) {
         	    	console.log("error");
