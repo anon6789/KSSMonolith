@@ -29,9 +29,9 @@ function deleteFromBasket(itemName) {
 	console.log("try to delete " + itemName + " from basket.");
 	
     $.ajax({
-        	    url: 'http://localhost:8080/product/?user=' + 'martin',
+        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
         	    type: 'DELETE',
-        	    data: '{ "count": '+ 1 + ', "productId": "' + itemName + '" }',
+        	    data: '{ "count": '+ 1 + ', "productDto": {"productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
         	    dataType:"json",
         	    success: function() { 
@@ -39,7 +39,7 @@ function deleteFromBasket(itemName) {
         	    },
         	    error: function() {
         	    	console.log("error");
-      	    	  	location.reload(true); //TODO: ugly hack, implement nice reload
+      	    	  	//location.reload(true); //TODO: ugly hack, implement nice reload
         	    }
         	});
 }
