@@ -22,7 +22,29 @@ function addToChart() {
         	});
 }
 
-function deleteFromBasket(itemName) {
+function increaseBasket(itemName, count){
+console.log("increase " + itemName + " in basket.");
+
+	itemName = itemName.toLowerCase()
+	
+    $.ajax({
+        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
+        	    type: 'PUT',
+        	    data: '{ "count": '+ count + ', "productDto": { "productId": "' + itemName + '" } }',
+        	    contentType:"application/json; charset=utf-8",
+        	    dataType:"json",
+        	    success: function(data) { 
+        	    	console.log(data);
+        	    	location.reload(true); //TODO: ugly hack, implement nice reload
+        	    },
+        	    error: function(data) {
+        	    	console.log("error");
+        	    }
+        	});
+}
+
+
+function deleteFromBasket(itemName, count) {
 	
 	itemName = itemName.toLowerCase()
 		
@@ -31,7 +53,7 @@ function deleteFromBasket(itemName) {
     $.ajax({
         	    url: 'http://localhost:8080/basket/?user=' + 'martin',
         	    type: 'DELETE',
-        	    data: '{ "count": '+ 1 + ', "productDto": {"productId": "' + itemName + '" } }',
+        	    data: '{ "count": '+ count + ', "productDto": {"productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
         	    dataType:"json",
         	    success: function() { 

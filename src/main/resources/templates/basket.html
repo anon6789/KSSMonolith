@@ -17,24 +17,26 @@
   <div class="container category">
 
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-5 col-sm-5">
       	<a>Article Name</a>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2">
       	<a>Count</a>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2">
       	<a>Price</a>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-1 col-sm-1"></div>
     </div>
     
     <div class="row">
       <div th:each="product, row : ${basket}">
-		<div class="col-md-7"><a th:text="${product.name}">Product</a></div>
-      	<div class="col-md-2"><a th:text="${product.count}"></a></div>
-      	<div class="col-md-2"><p th:text="${product.price}">1,47 Euro</p></div>
-      	<div class="col-md-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\');'" class="deleteButton">X</button></div>
+		<div class="col-md-5 col-sm-5"><a th:text="${product.name}">Product</a></div>
+      	<div class="col-md-2 col-sm-2"><a th:text="${product.count}"></a></div>
+      	<div class="col-md-2 col-sm-2"><p th:text="${product.price}">1,47 Euro</p></div>
+      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton">-</button></div>
+      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:increaseBasket(\'' + ${product.name} + '\', 1);'" class="deleteButton">+</button></div>
+      	<div class="col-md-1 col-sm-1"><button  th:onclick="'javascript:deleteFromBasket(\'' + ${product.name} + '\', 10);'" class="deleteButton">X</button></div>
       </div>
     </div>
     
