@@ -42,7 +42,7 @@ public class ProductDTO {
   }
 
   public String getPrice() {
-    return price;
+    return price.substring(1);
   }
 
   public String getDescription() {
