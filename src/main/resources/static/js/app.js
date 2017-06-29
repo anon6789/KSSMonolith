@@ -67,3 +67,19 @@ function deleteFromBasket(itemName, count) {
         	    }
         	});
 }
+
+function deleteOrder(){	
+	console.log("try to delete order.");
+	
+    $.ajax({
+        	    url: 'http://localhost:8080/order/?user=' + 'martin',
+        	    type: 'DELETE',
+        	    success: function() { 
+        	    	  location.reload(true); //TODO: ugly hack, implement nice reload
+        	    },
+        	    error: function() {
+        	    	console.log("error");
+      	    	  	//location.reload(true); //TODO: ugly hack, implement nice reload
+        	    }
+        	});
+}
