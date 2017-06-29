@@ -8,7 +8,7 @@ function addToChart() {
 	console.log("try to add " + itemName + " to basket.");
 	
     $.ajax({
-        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
+        	    url: 'http://' + location.hostname + ':8080/basket/?user=' + 'martin',
         	    type: 'PUT',
         	    data: '{ "count": '+ count + ', "productDto": { "productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
@@ -30,7 +30,7 @@ console.log("increase " + itemName + " in basket.");
 	itemName = itemName.toLowerCase()
 	
     $.ajax({
-        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
+        	    url: 'http://' + location.hostname + ':8080/basket/?user=' + 'martin',
         	    type: 'PUT',
         	    data: '{ "count": '+ count + ', "productDto": { "productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
@@ -53,7 +53,7 @@ function deleteFromBasket(itemName, count) {
 	console.log("try to delete " + itemName + " from basket.");
 	
     $.ajax({
-        	    url: 'http://localhost:8080/basket/?user=' + 'martin',
+        	    url: 'http://' + location.hostname + ':8080/basket/?user=' + 'martin',
         	    type: 'DELETE',
         	    data: '{ "count": '+ count + ', "productDto": {"productId": "' + itemName + '" } }',
         	    contentType:"application/json; charset=utf-8",
@@ -72,7 +72,7 @@ function deleteOrder(){
 	console.log("try to delete order.");
 	
     $.ajax({
-        	    url: 'http://localhost:8080/order/?user=' + 'martin',
+        	    url: 'http://'+ location.hostname + ':8080/order/?user=' + 'martin',
         	    type: 'DELETE',
         	    success: function() { 
         	    	  location.reload(true); //TODO: ugly hack, implement nice reload
