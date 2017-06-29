@@ -53,7 +53,7 @@
     <div class="row" id="basketSum">
     	<div class="col-md-6 col-sm-6"></div>
     	<div class="col-md-1 col-sm-1">Total:</div>
-    	<div class="col-md-1 col-sm-1"><p>TODO</p></div>
+    	<div class="col-md-1 col-sm-1"><a th:text="${#numbers.formatDecimal(totalPrice, 0, 'DEFAULT', 2, 'DEFAULT')}+'$'"></a></div>
     </div>
     
     <div class="row">
