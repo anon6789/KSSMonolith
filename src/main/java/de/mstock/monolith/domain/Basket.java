@@ -18,15 +18,28 @@ public class Basket {
 	private List<BasketEntryDto> productList = null;
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	@JsonProperty("couponDto")
+	private CouponDto couponDto;
+
 
 	@JsonProperty("basketEntryDtoList")
 	public List<BasketEntryDto> getProductList() {
 		return productList;
 	}
-
+	
 	@JsonProperty("basketEntryDtoList")
 	public void setProductList(List<BasketEntryDto> productList) {
 		this.productList = productList;
+	}
+	
+	@JsonProperty("couponDto")
+	public CouponDto getCouponDto() {
+		return this.couponDto;
+	}
+
+	@JsonProperty("couponDto")
+	public void setCouponDto(CouponDto couponDto) {
+		this.couponDto = couponDto;
 	}
 
 	@JsonAnyGetter

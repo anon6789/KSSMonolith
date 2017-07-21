@@ -49,12 +49,51 @@
       	</div>
       </div>
     </div>
+       
+  
+    <div class="row" id="basketSum">
+    	<div class="col-md-6 col-sm-6"></div>
+    	<div class="col-md-1 col-sm-1">Subtotal:</div>
+    	<div class="col-md-1 col-sm-1"><a th:text="${#numbers.formatDecimal(subTotalPrice, 1, 'DEFAULT', 2, 'DEFAULT')}+'$'"></a></div>
+    </div>
+    
+    <form action="#" method = "POST" th:action="@{/basket}" th:object = "${coupon}" id = "couponForm">
+        <div class="row">
+    	    <div class="col-md-6 col-sm-6"></div>
+    	    <div class="col-md-1 col-sm-1">
+    	    	<p>Coupon:</p>
+    	    </div>
+    	    <div class="col-md-1 col-sm-1">
+    	        <span th:if="${discountActive  == false}">
+    	   			<input type = "text" th:field = "*{code}" />
+    	   		</span>
+    	   		<span th:if="${discountActive == true}">
+    	    		<a th:text="${#numbers.formatDecimal(discount, 1, 'DEFAULT', 2, 'DEFAULT')}+'$'"></a>
+    	    	</span>
+    	    </div>
+    	    <div class="col-md-1 col-sm-1">
+    	    	<span th:if="${discountActive == true}">
+    	    		<a th:text="${couponDto.couponCode}"></a>
+    	    	</span>
+    	    </div>
+    	    <div class="col-md-1 col-sm-1">
+    	    <span th:if="${discountActive == false}">
+    	    	<input class="deleteButton btn" type = "submit" value = "Add code" />
+    	    </span>
+    	    <span th:if="${discountActive == true}">
+    	    	<button onclick="deleteCoupon()" class="deleteButton btn">x</button>
+    	    </span>
+    	    </div>
+    	    <div class="col-md-1 col-sm-1"></div>
+   		</div>   
+    </form>
     
     <div class="row" id="basketSum">
     	<div class="col-md-6 col-sm-6"></div>
     	<div class="col-md-1 col-sm-1">Total:</div>
-    	<div class="col-md-1 col-sm-1"><a th:text="${#numbers.formatDecimal(totalPrice, 0, 'DEFAULT', 2, 'DEFAULT')}+'$'"></a></div>
+    	<div class="col-md-1 col-sm-1"><a th:text="${#numbers.formatDecimal(totalPrice, 1, 'DEFAULT', 2, 'DEFAULT')}+'$'"></a></div>
     </div>
+    
     
     <div class="row">
     	<div class="col-md-8 col-sm-8"></div>

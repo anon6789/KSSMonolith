@@ -83,3 +83,19 @@ function deleteOrder(){
         	    }
         	});
 }
+
+function deleteCoupon(){	
+	console.log("try to delete coupon.");
+	
+    $.ajax({
+        	    url: 'http://'+ location.hostname + ':8080/coupon/?user=' + 'martin',
+        	    type: 'DELETE',
+        	    success: function() { 
+        	    	  //location.reload(true); //TODO: ugly hack, implement nice reload
+        	    },
+        	    error: function() {
+        	    	console.log("error");
+      	    	  	//location.reload(true); //TODO: ugly hack, implement nice reload
+        	    }
+        	});
+}
