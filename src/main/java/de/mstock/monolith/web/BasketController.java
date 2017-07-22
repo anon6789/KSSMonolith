@@ -81,6 +81,7 @@ public class BasketController {
 		  } else {
 			  totalPrice = subTotalPrice;
 			  this.couponDto = basket.getCouponDto();
+			  discountActive = false;
 		  }
 	  }
 	  return products;
